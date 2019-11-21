@@ -1,0 +1,18 @@
+<div class="spacer"></div>
+
+<h1 class="mx-3">Restaurants List</h1>
+
+<div class="spacer"></div>
+
+<div class="container">
+  <% @restaurants.each do |r| %>
+    <%= link_to restaurant_path(r) do %>
+      <div class="card m-3">
+        <h4 class="m-3"><%= r.name %></h4>
+        <h6 class="mx-3"><%= r.address %></h6>
+        <p class="mx-3"><%= r.phone_number %></p>
+        <p class="mx-3" style="text-align: right;"><%= r.category %></p>
+      </div>
+    <% end %>
+  <% end %>
+</div>
