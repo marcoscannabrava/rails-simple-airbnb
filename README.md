@@ -1,11 +1,11 @@
 # README
 
-A Simple Airbnb Clone built on Rails. 
+A Simple Airbnb Clone built on Rails.
 
-**Pending:**
-- Bootstrap formatting
-- Routes:
-> update
-> edit
-> destroy
-- Search feature
+### Installation Instructions
+```bash
+bundle
+rails db:create db:migrate db:seed
+rails s
+```
+Open http://localhost:3000/
